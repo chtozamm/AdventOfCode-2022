@@ -1,6 +1,6 @@
 ### AdventOfCode Day 1: 
 ### p.1 Find the elf carrying the most calories and print the sum of them
-### p.2 
+### p.2 Find the sum of calories of top 3 elves carriers 
 
 # Open input file and record input as string
 with open("input.txt", "r") as file:
@@ -41,5 +41,15 @@ for arr in outer_array:
     if x > result:
         result = x
 
+bags = []
+for arr in outer_array:
+    x = sum(arr)
+    bags.append(x)
+
+bags_sorted = sorted(bags)
+
 # Print the biggest sum
 print(result)
+
+# Print the sum of top three bags
+print(bags_sorted[-1] + bags_sorted[-2] + bags_sorted[-3])

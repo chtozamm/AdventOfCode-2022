@@ -1,7 +1,7 @@
 """
 # Camp Cleanup 
-Advent Of Code, Day 3
-https://adventofcode.com/2022/day/3
+Advent Of Code, Day 4
+https://adventofcode.com/2022/day/4
 
 """
 
